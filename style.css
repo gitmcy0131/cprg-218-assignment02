@@ -72,6 +72,8 @@ h2 {
     position: relative;
     height: 80vh;
     background: url('images/hero.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero .overlay {
@@ -205,4 +207,46 @@ footer a {
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+
+/* adjust font size and spacing for small screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .cards {
+        gap: 0.5rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* style for the button */
+#changeBgBtn {
+    background-color: chocolate;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
 }
